@@ -192,7 +192,7 @@ hr {
 }
 
 .line {
-    margin-top: 100px;
+    margin-top: 77px;
 }
 
 .cards {
@@ -349,10 +349,5 @@ blockquote{
     .line {
         margin-top: 0;
         margin-bottom: 20px;
-    }
-    .container{
-        background-size:420px;
-        background-position: 50% 75%;
-        background-repeat: no-repeat;
     }
 }

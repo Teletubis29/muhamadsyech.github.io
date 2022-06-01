@@ -183,6 +183,7 @@ section{
 .textme2{
     color: #5E616A;
     margin-right: 150px; 
+    font-size: 17px;
 }
 
 hr {
@@ -269,7 +270,7 @@ blockquote{
     font-size: large;
 }
 
-@media (max-width :800px){
+@media screen and (max-width :800px){
     #menu-icon {
         display: initial;
     }
@@ -309,7 +310,7 @@ blockquote{
     }
 }
 
-@media (max-width :600px){
+@media screen and (max-width :600px){
     .github{
         padding: 7px;
         margin-top: 100px;
@@ -321,5 +322,37 @@ blockquote{
         margin-top: 57px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width:480px){
+    .social {
+        margin-right: -40px;
+    }
+    .social a {
+        font-size: 36px;
+    }
+    .btn {
+        margin-right: 10px;
+    }
+    .images {
+        float: none;
+        width: 60%;
+    }
+    .content1{
+        margin-top: 40px;
+    }
+    .textme2 {
+        display: inline;
+        font-size: 17px;
+    }
+    .line {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .container{
+        background-size:420px;
+        background-position: 50% 75%;
+        background-repeat: no-repeat;
     }
 }

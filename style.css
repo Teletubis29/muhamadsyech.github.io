@@ -367,6 +367,6 @@ blockquote{
         height: auto;
         grid-column: span 4;
         margin: 10px 0;
-        position: relative;
-        
-}
+        position: relative;   
+    }
+ }

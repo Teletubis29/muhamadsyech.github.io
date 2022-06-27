@@ -202,6 +202,7 @@ hr {
 }
 .card{
     border: 2px solid black;
+    width: 100%;
 }
 .card a{
     display: block;
@@ -350,4 +351,22 @@ blockquote{
         margin-top: 0;
         margin-bottom: 20px;
     }
+    .container1{
+        padding: 0;
+        padding-top: 65px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin:3px;
+        gap:10px;
+    }
+    .container1 h1 {
+        margin-left: 100px;
+    }
+    .cards {
+        width: 99%;
+        height: auto;
+        grid-column: span 4;
+        margin: 10px 0;
+        position: relative;
+        
 }

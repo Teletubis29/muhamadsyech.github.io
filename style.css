@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color:royalblue;
+}
+
+.position{
+    margin-top: 9px;
+    margin-left: 22px;
+    margin-bottom: 7px;
+    
+}
+
+.navbar{
+    display: flex;
+    
+}
+.navbar li {
+    position: relative;
+    list-style: none;
+    
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    background: white;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 3%;   
+    transition: all .34s; 
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+#menu-icon {
+    font-size: x-large;
+    z-index: 1001;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+section{
+    padding:0 14% ;
+    
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(haloabe.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+}
+.text {
+    padding-bottom: 60px;
+}
+.text p {
+    color: #5E616A;
+}
+.h-2{
+    color: royalblue;
+}
+.h-4{
+    margin-top: 7px;
+}
+.h-5{
+    margin-bottom: 27px;
+}
+.h-6 {
+    background-color:royalblue;
+    text-decoration: none;
+    color: white;
+    font-weight: 500 ;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 13px 4px ;
+    transition: all .30s;
+}
+.h-6:hover {
+    transform: translateY(-6px);
+}
+.social{
+    position: absolute;
+    top: 70%;
+    margin-left: 25%;
+}
+.social a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 45px;
+    color:royalblue;
+}
+.social li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+    transition: all .30s;
+}
+.social li:hover{
+    transform: translateY(-7px);
+    
+}
+
+/* About */
+.box{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+}
+
+.images{
+    float: right;
+}
+.textme{
+    color: royalblue;
+    width: 17ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    margin-top: 2rem;
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.textme2{
+    color: #5E616A;
+    margin-right: 150px; 
+    font-size: 17px;
+}
+
+hr {
+    background-color: royalblue;
+    padding: 1px;
+}
+
+.line {
+    margin-top: 77px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 100px;
+}
+.card{
+    border: 2px solid black;
+    width: 100%;
+}
+.card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #5E616A;
+}
+.card a:hover{
+    color: royalblue;
+}
+.container1 h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    
+}
+.video {
+    margin-right: 45%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 10px whitesmoke;
+    padding: 20px;
+
+}
+.video h1 {
+    text-align: center;
+    color: royalblue;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+blockquote{
+    margin-top: 15px;
+    color: royalblue;
+}
+
+.github {
+    position: absolute;
+    top: 82%;
+    margin-left: 64%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px 18px 3px 18px;
+    transition: all .30s;
+    box-shadow: 0px 0px 10px 1px royalblue;
+}
+
+.github:hover{
+    transform: translateY(-7px);
+}
+.github a{
+    text-decoration: none;
+    font-size: 40px;
+    color: royalblue;
+}
+.github a:hover {
+    opacity: 0.8;
+    color: black;
+}
+.p {
+    font-size: large;
+}
+
+@media screen and (max-width :800px){
+    #menu-icon {
+        display: initial;
+    }
+    .btn {
+        padding: 8px 10px;
+        margin-right: 40px;
+    }
+    .navbar {
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color:royalblue;
+        text-align: left;
+        transition: all .35s ease;
+    }
+    .navbar a {
+        display: block;
+        padding: 1rem;
+        margin: 1.3rem;
+        border-left: 2px solid white;
+    }
+    .navbar a:hover {
+        background-color: white;
+        color: black;
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar.active{
+        top:100%;
+    }
+    .video {
+        margin-top: 57px;
+    }
+}
+
+@media screen and (max-width :600px){
+    .github{
+        padding: 7px;
+        margin-top: 100px;
+    }
+    .github a {
+        font-size: 20px;
+    }
+    .video {
+        margin-top: 57px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:480px){
+    .social {
+        margin-right: -40px;
+    }
+    .social a {
+        font-size: 36px;
+    }
+    .btn {
+        margin-right: 10px;
+    }
+    .images {
+        float: none;
+        width: 60%;
+    }
+    .content1{
+        margin-top: 40px;
+    }
+    .textme2 {
+        display: inline;
+        font-size: 17px;
+    }
+    .line {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .container1{
+        padding: 0;
+        padding-top: 65px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin:3px;
+        gap:10px;
+    }
+    .container1 h1 {
+        margin-left: 100px;
+    }
+    .cards {
+        width: 99%;
+        height: auto;
+        grid-column: span 4;
+        margin: 10px 0;
+        position: relative;   
+    }
+ }
